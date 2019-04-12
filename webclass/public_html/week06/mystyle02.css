@@ -1,0 +1,105 @@
+.text {
+   color: blue;
+   font-family: Lucida Console;
+}
+
+
+span.note {
+    font-size: 120%;
+    color: purple;
+}
+
+
+body {
+
+   background-color: gray;
+   margin-left: 20px;
+
+   }
+
+* {
+  box-sizing: border-box;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: lime;
+}
+
+h1 {
+   text-align: left;
+   font-size:60px;
+   font-family: verdana;
+   color: navy;
+
+   }
+/* Create Hearder style */
+header {
+   padding: 60px;
+   background-image: url("sp.jpg");
+   background-repeat: no-repeat;
+   background-position: right top;
+   background-attachment: fixed;
+   background-size: contain; 
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 25%;
+  height: 1300px;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  font-size: 30px;
+  padding: 0;
+
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 75%;
+  background-color: #f1f1f1;
+  height: 1300px;
+  
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+   padding: 60px;
+   background-image: url("lake.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover; 
+   text-align: center;
+   color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  section {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  }
+}
+

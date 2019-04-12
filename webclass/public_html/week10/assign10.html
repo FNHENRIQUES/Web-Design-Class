@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fernando Negreiros Henriques' Personal Page</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cs213.css" />
+		<script src="ajax.js"></script>
+		
+		
+		
+       <style>
+    body { 
+    background-color: lightgray;
+    }
+    
+    h1{
+    font-family: verdana;
+    font-size: 20px;
+    }
+    </style>
+    </head>
+    
+    <body>
+
+       <h1> Monthly Payment Calculator</h1>
+    <form>
+      <fieldset>
+       <legend>Enter number for:</legend>
+       <ul>
+       <li>Annual percentage rate = Apr.</li>
+       <li>Yearly term = Term</li>
+       <li>Present Value = Amount </li>
+       </ul>
+       </fieldset>
+       </form>
+       
+       <form action = "calc.php" method = "get">
+          Apr:<br>
+          <input type= "number" step="0.01" id = "apr" name ="apr"><br>
+          Term:<br>
+          <input type= "number" step="0.01" id = "term" name ="term"><br>
+          Amount<br>
+          <input type= "number" step="0.01" id = "amount" name ="amount"><br><br>
+
+          <input type="submit" value="submit">
+
+
+       </form>
+       <br>
+       <br>
+       
+        <p><a href="assign101.html">Part II</a></p>
+        
+        <hr>
+
+<footer>
+
+ <p><a href="../index.html">CS 213 Assignments</a></p>
+
+</footer>
+
+
+    </body>
+
+</head>

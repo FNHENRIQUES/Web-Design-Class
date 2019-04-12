@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">  
+  <head>  
+   <title>Fernando Negreiros Henriques. - Week 06 - CS - 213 Web Engineering 01.</title>
+   <meta charset="UTF-8" />
+   <meta name="description" content="Free Web tutorials">
+   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+   <meta name="author" content="Fernando N Henriques">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" type="text/css" href="mystyle02.css">
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">  
+   <meta http-equiv="Content-Script-Type" content="text/javascript"> 
+
+    <script type="text/javascript" scr= "week06/validator.js">
+    </script>
+  </head>  
+  <body>
+      <header>  
+         <h1 style="color:lime;"> Fernando Bookstore Check Out! </h1>
+      </header>
+<h2>Input your data. </h2>
+
+<form action = "">
+<p> 
+   <label>
+   First Name<br>
+     <input type = "text" id = "first_name" />
+   </label>
+<br>
+   <label>
+   Last Name<br>
+     <input type = "text" id = "last_name" />
+   </label>
+<br>
+<label>
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Address:</legend>
+    Street:<br>
+    <input type="text" name="street">
+    <br>
+    City:<br>
+    <input type="text" name="city">
+    <br>
+    State:<br>
+    <input type="text" name="State">
+    <br>
+    Zip Code:<br>
+    <input type="text" name="Zip Code">
+    <br>
+    Coutry:<br>
+    <input type="text" name="Country">
+    <br>
+    
+  </fieldset>
+</form>
+
+
+
+<br>
+   <label>
+      Input your telephone number.
+        <br> The format is ###-###-####.
+<br>
+      <input type = "text" id = "phone" />
+    </label>
+    <br> 
+<br/>
+<input type = "submit" id = "submit" />
+<input type = "reset" id = "reset" />
+</p>
+</form>
+<script type = "text/javascript" src = "week06/validatorr.js">
+</script>
+
+<form action = "">
+   <h3>Order Book Form.</h3>
+   <table>
+   <tr>
+      <th>Book</th>
+      <th>Price</th>
+      <th>Quantity</th>
+   </tr>
+   <tr>
+     <th>Programming World Wide Web</th>
+     <td>$86.00</td>
+     <td><input type = "text" id = "web" size = "3" /></td>
+   </tr>
+   <tr>
+     <th>Efective Modern C++</th>
+     <td>$38.00</td>
+     <td><input type = "text" id = "cpp" size = "3" /></td>
+   </tr>
+   <tr>
+   <th>Clean Code</th>
+     <td>$23.69</td>
+     <td><input type = "text" id = "clean" size = "3" /></td>
+   </tr>
+   <tr>
+     <th>The Modern JavaScript</th>
+     <td>$19.99</td>
+     <td><input type = "text" id = "js" size = "3" /></td>
+   </tr>
+   </table>
+   <p>
+     <input type = "button" value = "Total Cost"
+             onclick = "computeCost();" />
+     <input type = "text" size = "5" id = "cost"
+             onfocus = "this.blur();" />                     
+   </p>
+   
+   <p>
+     <input type = "submit" value = "Submit Order" />
+     <input type = "reset" value = "Clear Order Form" />
+   </p>
+   
+</form>
+   
+
+<script type = "text/javascript" src = "validatorr.js"></script>
+  <footer style="color:red;">
+  <p style="font-size:20px;">Back to Store.</p>
+  <p><a href= "assign06.html"><i class="material-icons" style="font-size:48px;">refresh</i></a></p>
+Last version by Fernando 
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+</footer>
+
+  </body>  
+
+</html>

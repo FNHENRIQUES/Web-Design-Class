@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>W12 Mileage Calculator</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/cs213.css" />
+		<script src="ajax.js"></script>
+		
+		
+		
+       <style>
+    body { 
+    background-color: lightgreen;
+    }
+	
+	
+	
+	
+    </style>
+    </head>        
+    
+    <body>
+	<header><h1> Mileage Calculator </h1></header>
+	
+	
+	
+	
+       <form action = "" method = "get"><p>
+	   
+          Start City:<br>
+          <input type= "text" id = "startCity"  name ="startCity"><br>
+          Start State:<br>
+          <input type= "text" id = "starState" name ="starState" required maxlength="2" size = "4" onkeyup="this.value = this.value.toUpperCase();"><br>
+          Destination City:<br>
+          <input type= "text" id = "endCity" name ="endCity"><br>
+		  Destination State:<br>
+          <input type= "text" id = "endState" name ="endState" required maxlength="2" size = "4" onkeyup="this.value = this.value.toUpperCase();"><br>
+		  <br>
+
+          <input type="submit" value="submit">
+
+
+       </form>
+       <br>
+       <br>
+    
+        
+        <hr>
+
+<footer>
+
+ <p><a href="../index.html">CS 213 Assignments</a></p>
+
+</footer>
+
+
+    </body>
+
+</head>

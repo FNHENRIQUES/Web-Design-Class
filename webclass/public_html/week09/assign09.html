@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assigment 09</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="week09">
+        <meta name="keywords" content="BYUI, CS213, week09">
+        <meta name="author" content="Fernando Negreiros Henriques">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script>
+function loadDoc(x) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", x, true);
+  xhttp.send();
+}
+
+
+</script>       
+        
+<style>
+   .button {
+     display: inline-block;
+     padding: 15px 25px;
+     font-size: 20px;
+     cursor: pointer;
+     text-align: center;
+     text-decoration: none;
+     outline: none;
+     color: navy;
+     background-color: yellow;
+     border: none;
+     border-radius: 10px;
+     box-shadow: 0 9px #999;
+   }
+
+   .button:hover {background-color: blue}
+
+   .button:active {
+     background-color: purple;
+     box-shadow: 0 5px #666;
+     transform: translateY(4px);
+   }
+   
+   body {
+   
+   background.color: lightgray;
+   }
+   
+   td, th, table {
+   border: solid black;
+   }
+
+</style>
+
+    </head>
+    
+    <body>
+    <header>
+      <h1>Select Country Button - "See main City Statistics."</h1>
+      <script scr="main.js"></script>
+      <button class="button" onclick= "loadDoc('usa.txt')" >USA</button>
+      <button class="button" onclick= "loadDoc('canada.txt')" >CANADA</button>
+      <button class="button" onclick= "loadDoc('mexico.txt')" >MEXICO</button>
+      <button class="button" onclick= "loadDoc('russia.txt')" >RUSSIA</button>    
+    </header>
+ 
+    <p id= "demo"></p>
+<p></p>
+
+<p></p>
+<hr> 
+<h2>Type the file name!</h2>
+<input type="text" name="filename">
+<input type="submit" value="File">
+<p><b><i>Student data.</i></b></p>
+   <table>
+     <tr>
+     <th>Last Name</th>
+     <th>First Name</th>
+     <th>Address</th>
+     <th>Major</th>
+     <th>GPA</th>
+     </tr>
+     
+     <tr>
+     <td> <input type = "text" name = "last" size = "30" /> </td>
+     <td> <input type = "text" name = "first" size = "30" /> </td>
+     <td> <input type = "text" name = "address" size = "30" /> </td>
+     <td> <input type = "text" name = "major" size = "30" /> </td>
+     <td> <input type = "text" name = "gpa" size = "10" /> </td>
+     </tr>
+ 
+    </table>
+    
+    <footer>
+        <p><a href="../index.html">CS 213 Assignments</a></p>
+    </footer>
+   </body>
+
+</html>

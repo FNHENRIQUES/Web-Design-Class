@@ -1,0 +1,2 @@
+document.getElementsByID ("first_name").onchange = chkName;
+document.getElementsByID ("last_name").onchange = chkName;

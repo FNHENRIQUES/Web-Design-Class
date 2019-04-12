@@ -1,0 +1,18 @@
+<!--CSS-->
+
+h1 {
+   color: blue;
+   text-align: center;
+   font-family: Impact, Charcoal, sans-serif;
+
+}
+
+ul, li {
+color: navy;
+text-indent: 50px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+background-color: lightblue;
+}

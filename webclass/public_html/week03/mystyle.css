@@ -1,0 +1,51 @@
+body {
+
+   background-color: lightblue;
+   margin-left: 20px;
+  
+   }
+
+h1 {
+   color: navy;
+   text-align: center;
+   font-size:60px;
+   }
+
+.section{
+   margin-left: 150px;
+   }
+
+.section-header{
+   text-align: center;
+   color: blue;
+   font-size:30px;
+   }
+
+.center-text {
+   text-align: center;
+   text-decoration: underline;
+   color: navy;
+   }
+    
+.foot{
+   text-align: right;
+   text-decoration: underline;
+   color: purple;
+   font-size: 13px;
+   }
+
+.centered{
+ text-align: center;
+ color: green;
+}
+
+.spec_table{
+  width: 100%;
+  border-collapse: collapse;
+   
+}
+
+.most{
+ border: 2px solid black;
+ font-family: 'Times New Roman', 'Helvetica', monospace;
+}

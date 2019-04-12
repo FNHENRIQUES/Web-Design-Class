@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fernando Week 13</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="mystyle02.css">
+  <script type = "text/javascript" src = "validator.js" >
+   </script>
+ 
+  
+</head>
+<body>
+  
+<div class="container-fluid">
+<header>
+  <h1>Piano Class Register</h1>
+  <p><a href="../index.html">CS 213 Assignments</a></p>
+  </header>
+  <p>Class List</p> 
+  
+  <form action = "list.php" method= "get">
+  <fieldset>
+  <legend>Enter student information</legend>
+ 
+	   
+	   First Name<br>
+	   <input type=text name = "first_name" ><br/>
+	
+	
+     Last Name<br>
+	   <input type=text name = "last_name"><br/>
+
+	
+     Student Id<br>
+	   <input type=text name = "student_id"><br/>
+
+	
+     <p>Performace Type</p>
+	     <input type= "radio" name= "performace" id = "solo"/> Solo <br/>	
+       <input type= "radio" name= "performace" id = "duet" onclick = "chkName"/> Duet <br/>
+       <input type= "radio" name= "performace" id = "concert"/> Concert <br/> </br>	   
+
+	
+    Skill Level</br>
+	   <input type=text name= "skill"></br>
+	
+	
+	Instrument</br>
+	   <input type=text name= "instrument"></br>	
+
+	
+    Location</br>
+	   <input type=text name= "location"></br>
+
+	   
+	Number Room</br>
+	   <input type=text name= "room"></br>
+
+	   
+    Time</br>
+	   <input type=text name= "time_slot"></br>
+
+
+
+     <input type = "reset" id = "clear" value= "Clear form"/>
+     <input type = "submit" id = "submit" value= "Register"/>
+   
+	 </fieldset>
+	
+	</form>
+
+
+  
+</div>
+
+</body>
+</html>
